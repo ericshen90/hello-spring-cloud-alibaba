@@ -29,6 +29,7 @@
 
   <modules>
     <module>hello-spring-cloud-alibaba-dependencies</module>
+    <module>hello-spring-cloud-alibaba-provider</module>
   </modules>
 
   <licenses>
@@ -45,7 +46,6 @@
       <email>ahsbt@126.com</email>
     </developer>
   </developers>
-
 
   <dependencyManagement>
     <dependencies>
