@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @author EricShen
  * @date 2019-11-21
  */
-@FeignClient(value = "service-provider")
+@FeignClient(value = "service-provider", fallback = EchoServiceFallback.class)
 public interface EchoService {
 
   @GetMapping(value = "echo/{name}")
