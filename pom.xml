@@ -67,7 +67,7 @@
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <spring-javaformat.version>0.0.12</spring-javaformat.version>
+        <spring-javaformat.version>0.0.15</spring-javaformat.version>
       </properties>
       <build>
         <plugins>
