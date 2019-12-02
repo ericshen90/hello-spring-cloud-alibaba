@@ -1,0 +1,20 @@
+version: '3.6'
+
+services:
+  provider:
+    image: hello-spring-cloud-alibaba-provider
+    container_name: alibaba-provider
+    build:
+      context: ../hello-spring-cloud-alibaba-provider/
+      dockerfile: Dockerfile
+
+  consumer:
+    image: hello-spring-cloud-alibaba-consumer
+    container_name: alibaba-consumer
+    build:
+      context: ../hello-spring-cloud-alibaba-consumer
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - provider
