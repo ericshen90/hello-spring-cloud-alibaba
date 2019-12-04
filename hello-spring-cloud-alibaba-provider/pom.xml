@@ -60,6 +60,37 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
+
+      <plugin>
+        <groupId>com.google.cloud.tools</groupId>
+        <artifactId>jib-maven-plugin</artifactId>
+        <version>1.8.0</version>
+        <configuration>
+          <from>
+            <image>openjdk:8-jdk-alpine</image>
+          </from>
+          <to>
+<!--            <image>172.16.140.153:9001/rs/provider</image>-->
+            <image>docker.io/ericshen90/provider</image>
+            <tags>
+              <tag>${project.version}</tag>
+            </tags>
+            <auth>
+<!--              <username>admin</username>-->
+              <username>ericshen90</username>
+<!--              <password>Harbor12345</password>-->
+              <password>597009622</password>
+            </auth>
+          </to>
+          <container>
+            <environment>
+              <TZ>Asia/Shanghai</TZ>
+            </environment>
+            <useCurrentTimestamp>true</useCurrentTimestamp>
+          </container>
+          <allowInsecureRegistries>true</allowInsecureRegistries>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 
