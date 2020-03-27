@@ -10,7 +10,7 @@
   <url>http://ericshen.coding.me</url>
 
   <properties>
-    <spring-cloud.version>Greenwich.SR3</spring-cloud.version>
+    <spring-cloud.version>Greenwich.SR5</spring-cloud.version>
     <spring-cloud-alibaba.version>2.1.1.RELEASE</spring-cloud-alibaba.version>
   </properties>
 
